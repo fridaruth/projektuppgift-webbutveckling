@@ -1,0 +1,527 @@
+/* - Global styling - */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Jost", sans-serif;
+    background-color: #0f1110;
+}
+
+
+/*- Text-styling -*/
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 4rem;
+    color: #f5df9a;
+}
+
+h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #f5df9a;
+}
+
+h3 {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #bed4b9;
+}
+
+h4 {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #e9adaa;
+}
+
+h5 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+    color: white;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+/*- Banner -*/
+
+#bannerhome {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 50vh;
+    background-color: black;
+}
+
+/* Bakgrunds-video */
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Banner bilder */
+.banner {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    background-position: center;
+    background-color: black;
+}
+
+#bannerhome {
+    background-image: url("../images/loggiskort.jpg");
+}
+
+#bannerabout {
+    background-image: url("../images/omoss.jpg");
+}
+
+#bannerfilms {
+    background-image: url("../images/filmer.jpg")
+}
+
+#bannercontact {
+    background-image: url("../images/hej.jpg");
+}
+
+
+/* Titel på banner */
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Banner innehåll, logga + nav */
+.banner-content {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.banner-content .logo {
+    position: relative;
+    transform: none;
+}
+
+.banner-content .logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.banner-content nav {
+    position: static;
+    width: 100%;
+}
+
+.banner-content nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    background-color: black;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner-content nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.banner-content nav a:hover,
+.banner-content nav a:focus,
+.banner-content nav #active {
+    text-decoration: wavy underline;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*- Home-sida -*/
+#home {
+    padding: 5%;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+#home-gif {
+    width: min(40vw, 300px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 6px dotted #7da873;
+    margin: 0 auto;
+}
+
+/* knapp */
+.button-wrapper {
+    text-align: center;
+    margin: 2rem;
+}
+
+.button {
+    border-radius: 8px;
+    border-style: none;
+    background-color: #9F2E28;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: wavy underline;
+}
+
+/* film-sektion */
+.images {
+    text-align: center;
+}
+
+#somefilms {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 2%;
+    background-color: #7da873;
+    border-radius: 8px;
+}
+
+#somefilms img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/*- Om oss-sida -*/
+
+.aboutus {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.aboutus h3 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.aboutus-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.aboutus-text {
+    max-width: 700px;
+    text-align: left;
+}
+
+.portrait-large {
+    width: min(90%, 500px);
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* patrick & frida */
+.person-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    text-align: left;
+}
+
+.person-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px dotted #7da873;
+    margin-bottom: 1rem;
+}
+
+/*- Filmer-sidan -*/
+#films {
+    max-width: 1200px;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 0 auto 4rem auto;
+}
+
+#films iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    border: none;
+    display: block;
+}
+
+/*- Kontakt -*/
+form {
+    margin: 10px auto;
+    justify-content: center;
+    line-height: 2rem;
+    min-width: 350px;
+    max-width: 500px;
+    color: white;
+}
+
+fieldset {
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    padding: 4%;
+}
+
+input {
+    padding: 5px;
+    border-style: none;
+    border-radius: 2%;
+}
+
+/* footer */
+footer {
+    background-color: #9F2E28;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+footer a,
+#privacy a,
+#accessibility a  {
+    text-decoration: underline;
+}
+
+#privacy, 
+#accessibility {
+    text-align: center;
+    padding: 5% 10%;
+    line-height: 2rem;
+}
+
+#privacy a:hover,
+#accessibility a:hover {
+    text-decoration: wavy underline;
+} 
+
+/*- Media queries  -*/
+@media (min-width: 600px) {
+
+    /*- Tablet */
+    /* första sidan */
+    #somefilms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #somefilms img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 8%;
+    }
+
+    /* om oss-sidan */
+    .people-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .person-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .person-card p {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .person-card img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Desktop */
+    /* första sidan */
+    .home-content {
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .text-content {
+        text-align: left;
+        max-width: 600px;
+    }
+
+    #home-gif {
+        height: auto;
+        width: 40%;
+    }
+
+    .button-wrapper {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    #somefilms {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: start;
+    }
+
+    #somefilms img {
+        flex: 1 1 0;
+    }
+
+    /* om oss-sidan */
+    .aboutus-intro {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .aboutus-text {
+        flex: 1;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .portrait-large {
+        flex: 1;
+        max-width: 500px;
+        margin-top: 5%;
+        object-fit: cover;
+    }
+
+    .people-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .person-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .person-card p {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .person-card img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    /* filmer-sidan */
+    .video-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
